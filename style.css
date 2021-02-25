@@ -27,6 +27,23 @@ body {
     flex-direction: column;
     padding: 2%;
 }
+#currentBid {
+    color:gray;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow-y: scroll;
+    width: 50%;
+    
+}
+#currentBid div:last-child {
+    font-size: 2.3em;
+    color: black;
+    font-weight: bold;
+}
+#array {
+    color: rebeccapurple;
+}
 .inputs {
    
     height: 50%;
