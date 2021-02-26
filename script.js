@@ -65,8 +65,10 @@ leftButton.addEventListener('click', updateArr => {
         let retrieve = saveLocalStorage(bidArr);
         updateBid(currentBidHTML, retrieve);
         currentBidVal = leftInputVal;
+        document.getElementById('leftText').value = '';
     } else {
         alert("Your bid must be greater than current bid");
+        document.getElementById('leftText').value = '';
     }
 });
 rightButton.addEventListener('click', updateArr => {
@@ -78,8 +80,10 @@ rightButton.addEventListener('click', updateArr => {
         let retrieve = saveLocalStorage(bidArr);
         updateBid(currentBidHTML, retrieve);
         currentBidVal = leftInputVal;
+        document.getElementById('rightText').value = '';
     } else {
         alert("Your bid must be greater than current bid");
+        document.getElementById('rightText').value = '';
     }
 });
 leftForm.addEventListener('submit', updateArr => {
@@ -119,6 +123,7 @@ rightForm.addEventListener('submit', updateArr => {
         
     }
 });
+
 // rightButton.addEventListener('click', updateArr => {
 //     rightInputVal = document.getElementById('rightText').valueAsNumber;
 //     if (rightInputVal > currentBidVal) {
